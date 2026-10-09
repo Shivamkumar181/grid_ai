@@ -4,7 +4,7 @@
   "description": "",
   "main": "start-all.js",
   "scripts": {
-    "build": "npm install --prefix gateway && npm install --prefix services/auth && npm install --prefix services/agent && npm install --prefix services/chat && npm install --prefix services/billing",
+    "build": "npm install && npm install --prefix gateway && npm install --prefix services/auth && npm install --prefix services/agent && npm install --prefix services/chat && npm install --prefix services/billing",
     "start": "node start-all.js",
     "test": "node ../test/run-all-tests.js"
   },

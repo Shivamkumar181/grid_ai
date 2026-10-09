@@ -20,15 +20,19 @@ const processes = [];
 
 services.forEach((service) => {
   const cwd = path.resolve(__dirname, service.dir);
+  const rootNodeModules = path.resolve(__dirname, "node_modules");
+  const localNodeModules = path.resolve(cwd, "node_modules");
+
   const child = spawn("node", ["index.js"], {
     cwd,
     env: {
       ...process.env,
+      NODE_PATH: [localNodeModules, rootNodeModules, process.env.NODE_PATH].filter(Boolean).join(path.delimiter),
       PORT: service.port,
-      AUTH_SERVICE: process.env.AUTH_SERVICE || `http://localhost:${process.env.AUTH_PORT || 8001}`,
-      CHAT_SERVICE: process.env.CHAT_SERVICE || `http://localhost:${process.env.CHAT_PORT || 8002}`,
-      AGENT_SERVICE: process.env.AGENT_SERVICE || `http://localhost:${process.env.AGENT_PORT || 8003}`,
-      BILLING_SERVICE: process.env.BILLING_SERVICE || `http://localhost:${process.env.BILLING_PORT || 8004}`,
+      AUTH_SERVICE: process.env.AUTH_SERVICE || `http://127.0.0.1:${process.env.AUTH_PORT || 8001}`,
+      CHAT_SERVICE: process.env.CHAT_SERVICE || `http://127.0.0.1:${process.env.CHAT_PORT || 8002}`,
+      AGENT_SERVICE: process.env.AGENT_SERVICE || `http://127.0.0.1:${process.env.AGENT_PORT || 8003}`,
+      BILLING_SERVICE: process.env.BILLING_SERVICE || `http://127.0.0.1:${process.env.BILLING_PORT || 8004}`,
     },
     stdio: "inherit"
   });
