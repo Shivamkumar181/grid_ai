@@ -1,0 +1,9 @@
+{
+  "name": "grid",
+  "version": "1.0.0",
+  "description": "Grid AI Platform",
+  "type": "module",
+  "scripts": {
+    "test": "node test/run-all-tests.js"
+  }
+}

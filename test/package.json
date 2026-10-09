@@ -1,0 +1,9 @@
+{
+  "name": "grid-tests",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Comprehensive test suite for Grid application (gateway, auth, chat, billing, agent, and frontend)",
+  "scripts": {
+    "test": "node run-all-tests.js"
+  }
+}
