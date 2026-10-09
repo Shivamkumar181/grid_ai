@@ -107,10 +107,10 @@ export const login = async (
     );
 
     return res.json({
-
       success: true,
-
       user,
+      sessionId,
+      token: sessionId,
     });
 
   } catch (error) {

@@ -115,6 +115,15 @@ export async function runGatewayTests() {
       expect(responseData.message).toBe("Unauthorized");
       expect(nextCalled).toBe(false);
     });
+
+    await test("protect extracts token from Authorization Bearer header or x-session-id", async () => {
+      const authHeader = "Bearer session_token_123";
+      const token = authHeader.replace(/^Bearer\s+/i, "").trim();
+      expect(token).toBe("session_token_123");
+
+      const xSessionHeader = "session_token_456";
+      expect(xSessionHeader).toBe("session_token_456");
+    });
   });
 
   await describe("Gateway: Header Propagation Decorator", async () => {

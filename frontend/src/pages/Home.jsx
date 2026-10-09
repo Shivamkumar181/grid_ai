@@ -19,6 +19,9 @@ function Home() {
   const login = async (token) => {
     try {
       const { data } = await api.post(`/api/auth/login`, { token });
+      if (data?.sessionId || data?.token) {
+        localStorage.setItem("grid_session", data.sessionId || data.token);
+      }
       dispatch(setUserData(data.user));
     } catch (error) {
       console.log(error);
