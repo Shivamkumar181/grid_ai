@@ -4,7 +4,7 @@ services:
     name: grid-backend
     runtime: node
     rootDir: backend
-    buildCommand: npm install && cd gateway && npm install && cd ../services/auth && npm install && cd ../services/agent && npm install && cd ../services/chat && npm install && cd ../services/billing && npm install
+    buildCommand: npm run build
     startCommand: npm start
     plan: free
     envVars:
