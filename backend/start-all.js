@@ -12,9 +12,7 @@ const services = [
   { name: "Gateway", dir: "gateway", port: process.env.PORT || 8000 }
 ];
 
-console.log("==========================================");
-console.log("🚀 Starting Grid Backend Services Suite");
-console.log("==========================================");
+console.log("Starting Grid Backend Services Suite");
 
 const processes = [];
 

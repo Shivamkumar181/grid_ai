@@ -69,45 +69,45 @@ export default function LandingPage({ onLogin, isLoggingIn }) {
   const featuresList = [
     {
       title: "Full-Stack Web App Generation",
-      tag: "HTML / CSS / JS",
-      desc: "Describe any dashboard, utility tool, game, or SaaS frontend. Grid outputs clean, responsive HTML, CSS, and vanilla JS that runs natively in the browser.",
-      work: "Direct code synthesis with zero framework overhead and instant DOM rendering in Monaco preview."
+      tag: "Full-Stack & Backend",
+      desc: "Architect and build complete full-stack web applications, robust backend services, APIs, and scalable databases. Capable of handling heavy production engineering workloads.",
+      work: "End-to-end full-stack code synthesis, deep debugging, and live sandbox execution."
     },
     {
       title: "Conversational Intelligence & Reasoning",
-      tag: "DeepSeek & Llama 3.3",
-      desc: "Fast, multi-turn reasoning for software architecture, code reviews, algorithms, and deep technical problem solving with retained memory.",
-      work: "Contextual token retention across multi-turn sessions with sub-second execution latency."
+      tag: "Advanced Reasoning",
+      desc: "Deep architectural reasoning, system design, root-cause bug diagnostics, algorithmic problem solving, and complex technical consulting with retained memory.",
+      work: "High-capacity contextual memory across multi-turn sessions with rapid execution throughput."
     },
     {
       title: "Live Web Intelligence & Search",
-      tag: "Tavily Real-Time API",
+      tag: "Real-Time Intelligence",
       desc: "Real-time web queries extract verified documentation, live benchmarks, breaking tech news, and synthesized citations with zero hallucination.",
       work: "Autonomous search queries with factual ground truth cross-referencing and source links."
     },
     {
       title: "Vector PDF RAG & Report Synthesis",
-      tag: "PDFKit & Embeddings",
+      tag: "Document Intelligence",
       desc: "Upload PDFs to execute semantic vector Q&A with chunked embeddings, or generate structured, print-ready PDF reports with headers and download links.",
-      work: "500-token chunk vector indexing with cosine similarity retrieval plus PDFKit binary document creation."
+      work: "500-token chunk vector indexing with cosine similarity retrieval and automated structured PDF publication compilation."
     },
     {
       title: "Presentation Deck Generation",
-      tag: "PptxGenJS (.pptx)",
+      tag: "Slide Decks (.pptx)",
       desc: "Create comprehensive 8-slide pitch decks, market reviews, or technical slides with structured agendas, metric callouts, and conclusion slides.",
       work: "Direct export into genuine Microsoft PowerPoint (.pptx) binary files editable in MS Office and Google Slides."
     },
     {
       title: "Multimodal Vision & Generative Art",
-      tag: "Gemini 2.5 & Pollinations",
-      desc: "Inspect architecture diagrams and code screenshots to find bugs or bottlenecks, or generate high-fidelity 8K visual images from natural text.",
-      work: "High-resolution multimodal visual tensor comprehension and Pollinations generative AI rendering."
+      tag: "Multimodal Vision & Art",
+      desc: "Inspect architecture diagrams and complex screenshots to pinpoint bugs and bottlenecks, or generate high-fidelity 8K visual assets from natural text.",
+      work: "High-resolution multimodal image and diagram inspection paired with generative AI rendering."
     },
     {
-      title: "Supervisor Graph Orchestration",
-      tag: "LangGraph DAG",
-      desc: "Zero-configuration automated dispatch. A stateful supervisor graph parses user intent and routes tasks to the appropriate specialist agent node.",
-      work: "Deterministic intent routing, isolated graph states, and coordinated tool execution."
+      title: "Autonomous Agent Orchestration",
+      tag: "Multi-Agent System",
+      desc: "Zero-configuration automated dispatch. An autonomous supervisor orchestrates complex user requests and coordinates heavy tasks across specialist agents.",
+      work: "Deterministic intent routing, isolated state management, and coordinated tool execution."
     }
   ];
 
@@ -115,29 +115,29 @@ export default function LandingPage({ onLogin, isLoggingIn }) {
     {
       name: "Coding Agent",
       rate: "10 Credits / task",
-      capability: "Generates full single-page web applications with modern HTML, clean CSS, and vanilla JS. Interactive state and responsive layouts.",
-      capacity: "Up to 1,500 lines of verified code per turn. Auto-mounted in live Monaco sandbox with zero server build step.",
+      capability: "Builds full-stack web applications, scalable backend APIs, database models, and performs deep code debugging and heavy engineering tasks.",
+      capacity: "Up to 1,500 lines of verified production code per turn with automated syntax validation and live interactive execution.",
       badge: "Full-Stack Dev"
     },
     {
       name: "Conversational Agent",
       rate: "1 Credit / task",
       capability: "Deep architectural reasoning, code review, algorithmic explanation, bug diagnosis, and general technical consulting.",
-      capacity: "Handles 128k context token windows with sub-second execution latency via Llama 3.3 70B & DeepSeek reasoning.",
+      capacity: "Handles 128k context token windows with deep multi-step reasoning, root-cause analysis, and system architecture consulting.",
       badge: "Core Reasoner"
     },
     {
       name: "Live Web Search Agent",
       rate: "5 Credits / task",
       capability: "Autonomous web reconnaissance, developer documentation lookup, factual verification, and real-time news extraction.",
-      capacity: "Executes parallel Tavily API search queries, filters duplicate domains, and formats citations with sources.",
+      capacity: "Executes parallel web reconnaissance queries, filters duplicate domains, and formats authoritative citations with sources.",
       badge: "Real-Time Web"
     },
     {
       name: "PDF Generator & RAG Agent",
       rate: "10 Credits / task",
       capability: "Semantic Q&A across user-uploaded PDF manuals, research papers, and books; automated PDF report compilation.",
-      capacity: "Chunks documents into 500-token vector embeddings for semantic retrieval; compiles multi-page PDFKit documents.",
+      capacity: "Indexes documents into 500-token vector embeddings for semantic retrieval; compiles publication-ready multi-page PDF documents.",
       badge: "Vector RAG"
     },
     {
@@ -151,7 +151,7 @@ export default function LandingPage({ onLogin, isLoggingIn }) {
       name: "Vision & Image Gen Agent",
       rate: "10 Credits / task",
       capability: "Multimodal screenshot analysis, diagram reverse engineering, bug pinpointing, and 8K visual asset generation.",
-      capacity: "Processes complex images through Gemini 2.5 Flash multimodal vision and Pollinations AI image generation.",
+      capacity: "Analyzes complex architecture diagrams and UI captures for deep bug diagnosis and renders high-resolution 8K visual assets.",
       badge: "Vision & 8K Art"
     }
   ];
@@ -160,26 +160,26 @@ export default function LandingPage({ onLogin, isLoggingIn }) {
     {
       step: "01",
       title: "Ingestion & Intent Classification",
-      desc: "Supervisor Graph receives user prompt and detects attachments. An LLM classifier identifies whether the task is coding, search, PDF, slides, or chat.",
+      desc: "Supervisor receives user prompt and detects attachments. An intelligent classifier identifies whether the task is full-stack coding, backend tasks, debugging, search, PDF, slides, or chat.",
       detail: "Zero manual agent selection needed. Automatic payload routing based on prompt semantics."
     },
     {
       step: "02",
       title: "Stateful Memory & Context Injection",
-      desc: "LangChain memory buffers retrieve relevant conversation history, active project constraints, and previous artifact state into the DAG execution graph.",
+      desc: "Intelligent state management retrieves relevant conversation history, active project constraints, and previous artifact state into active execution context.",
       detail: "Preserves full multi-turn awareness across iterative code adjustments and document edits."
     },
     {
       step: "03",
       title: "Specialist Toolchain Invocation",
-      desc: "The designated agent invokes specialized toolchains: Tavily web search, LangChain vector embeddings, PDFKit document builder, or PptxGenJS compiler.",
-      detail: "Isolated worker sub-graphs ensure zero context leakage and predictable tool execution."
+      desc: "The designated agent invokes specialized toolchains: full-stack code synthesis, deep debugging, vector knowledge retrieval, or presentation and document compilers.",
+      detail: "Isolated worker pipelines ensure zero context leakage and predictable tool execution."
     },
     {
       step: "04",
-      title: "Isolated In-Browser Sandbox Execution",
-      desc: "For web code tasks, generated HTML, CSS, and JS stream into a secure browser iframe sandbox. Monaco editor reflects code live with instant hot-reloading.",
-      detail: "Zero build dependencies or cold starts. Immediate in-browser execution with responsive preview controls."
+      title: "Isolated Live Sandbox Execution",
+      desc: "For web applications and full-stack modules, generated code streams directly into an isolated sandbox environment with instant hot-reloading and responsive controls.",
+      detail: "Zero build dependencies or cold starts. Immediate execution with responsive preview controls."
     },
     {
       step: "05",
@@ -241,25 +241,25 @@ export default function LandingPage({ onLogin, isLoggingIn }) {
 
   const agentRateTable = [
     { agent: "Conversational Agent", cost: "1 Credit", desc: "Fast reasoning & chat" },
-    { agent: "Live Web Search Agent", cost: "5 Credits", desc: "Tavily real-time research" },
-    { agent: "Coding Agent", cost: "10 Credits", desc: "Full app + Sandbox preview" },
-    { agent: "PDF Generator & RAG", cost: "10 Credits", desc: "Vector search & PDFKit doc" },
+    { agent: "Live Web Search Agent", cost: "5 Credits", desc: "Real-time web research" },
+    { agent: "Coding Agent", cost: "10 Credits", desc: "Full-stack apps, backend & debug" },
+    { agent: "PDF Generator & RAG", cost: "10 Credits", desc: "Vector search & PDF reports" },
     { agent: "Presentation Deck Agent", cost: "10 Credits", desc: "8-slide PowerPoint .pptx" },
-    { agent: "Vision & Image Gen Agent", cost: "10 Credits", desc: "Gemini vision & 8K art" }
+    { agent: "Vision & Image Gen Agent", cost: "10 Credits", desc: "Multimodal vision & 8K art" }
   ];
 
   const faqTheoryDetails = [
     {
-      q: "How does the LangGraph supervisor orchestration operate under the hood?",
-      a: "Grid utilizes a stateful LangGraph Directed Acyclic Graph (DAG) architecture. When a request is received, the Supervisor node performs semantic intent analysis on the prompt and any file attachments. Rather than relying on a monolithic prompt, it delegates work to purpose-built autonomous worker sub-graphs. Each worker has isolated memory, specific tool schemas (Tavily search, PDFKit, Monaco sandbox), and output validation, ensuring deterministic execution with optimal token efficiency."
+      q: "How does the multi-agent supervisor orchestration handle complex and heavy engineering tasks?",
+      a: "Grid utilizes an autonomous multi-agent supervisor architecture. When a request is received, the supervisor performs deep intent analysis on the prompt and project files. Rather than relying on a single generic model, it dispatches tasks to specialized autonomous workers capable of building full-stack web applications, architecting backend services, performing root-cause debugging, compiling PDFs, and generating presentations with deterministic execution and verified output."
     },
     {
       q: "How are credits deducted and calculated across different agents?",
-      a: "Credits are deducted atomically from your MongoDB user balance prior to agent execution. The deduction directly reflects computational and API overhead: standard conversational queries cost 1 credit; web search queries requiring external Tavily API synthesis cost 5 credits; and compute-heavy multimodal runs (such as full-stack code synthesis, vector PDF indexing, and PowerPoint deck generation) consume 10 credits. Failed executions automatically refund unused credits."
+      a: "Credits are deducted atomically from your balance prior to agent execution. The deduction directly reflects computational overhead: standard conversational queries cost 1 credit; real-time web research queries cost 5 credits; and compute-heavy tasks (such as full-stack web application development, backend logic, debugging, vector PDF indexing, and PowerPoint deck generation) consume 10 credits. Failed executions automatically refund unused credits."
     },
     {
-      q: "How does the in-browser sandbox render generated code safely without backend builds?",
-      a: "The Sandbox utilizes an isolated browser iframe environment configured with restricted permissions (allow-scripts, allow-same-origin). The coding agent synthesizes self-contained HTML5, inline modern CSS, and vanilla ES6+ JavaScript. The client injects this payload dynamically via srcdoc and blob URLs, providing immediate sub-millisecond hot-reloading with zero server compilation delays."
+      q: "How does the live sandbox preview full-stack applications and components safely?",
+      a: "The sandbox provides an isolated execution environment with live inspection. The coding agent synthesizes complete application logic, responsive UI layouts, and reactive state management. The workspace renders and executes this code with immediate sub-millisecond hot-reloading, interactive debugging, and instant preview capabilities."
     },
     {
       q: "How does document RAG search over user-uploaded PDF files without hallucinating?",
@@ -267,7 +267,7 @@ export default function LandingPage({ onLogin, isLoggingIn }) {
     },
     {
       q: "Can I export and modify generated presentations and PDFs in external software?",
-      a: "Yes. Generated presentations are built directly into genuine binary Microsoft PowerPoint (.pptx) file structures using PptxGenJS, which are fully compatible with MS Office, Google Slides, and Apple Keynote. PDF documents are assembled through PDFKit with proper typography, margin bounding boxes, and embedded metadata, ready for instant export and printing."
+      a: "Yes. Generated presentations are compiled directly into genuine binary Microsoft PowerPoint (.pptx) files fully compatible with MS Office, Google Slides, and Apple Keynote. PDF documents are assembled with structured typography, clean margins, and embedded metadata, ready for instant download, export, and printing."
     }
   ];
 
@@ -277,8 +277,8 @@ export default function LandingPage({ onLogin, isLoggingIn }) {
       name: "Coding Agent",
       tag: "10 Credits",
       color: "from-blue-500 to-indigo-600",
-      description: "Generates full single-page web applications with clean HTML, modern CSS, and vanilla JS. Provides instant in-browser code previews.",
-      samplePrompt: "Build a responsive SaaS analytics dashboard with interactive charts and dark theme"
+      description: "Builds full-stack web applications, scalable backend APIs, database models, and handles deep code debugging and heavy engineering tasks.",
+      samplePrompt: "Build a full-stack SaaS platform with analytics dashboards, backend API endpoints, and live data charts"
     },
     {
       id: "chat",
@@ -293,8 +293,8 @@ export default function LandingPage({ onLogin, isLoggingIn }) {
       name: "Live Web Search",
       tag: "5 Credits",
       color: "from-emerald-500 to-teal-600",
-      description: "Real-time web research powered by Tavily Search. Retrieves the latest documentation, live news, and synthesized citations.",
-      samplePrompt: "What are the latest ECMAScript 2026 features finalized this quarter?"
+      description: "Real-time web research and intelligence. Retrieves verified documentation, live benchmarks, breaking news, and synthesized citations.",
+      samplePrompt: "What are the latest enterprise architecture best practices finalized this quarter?"
     },
     {
       id: "pdf",
@@ -317,7 +317,7 @@ export default function LandingPage({ onLogin, isLoggingIn }) {
       name: "Vision & Image Gen",
       tag: "10 Credits",
       color: "from-rose-500 to-red-600",
-      description: "Analyze uploaded screenshots and architecture diagrams with Gemini 2.5 Flash, or generate photorealistic 8K imagery with Pollinations AI.",
+      description: "Inspect architecture diagrams and code screenshots to diagnose bugs and bottlenecks, or generate high-fidelity 8K visual assets.",
       samplePrompt: "Analyze this system architecture diagram and pinpoint single points of failure"
     }
   ];
@@ -355,7 +355,7 @@ export default function LandingPage({ onLogin, isLoggingIn }) {
         "Access to all 6 specialized agents",
         "Full-stack code generation",
         "PowerPoint (.pptx) deck export",
-        "Real-time Tavily search agent",
+        "Real-time web search agent",
         "30 days plan validity"
       ],
       popular: false,
@@ -372,7 +372,7 @@ export default function LandingPage({ onLogin, isLoggingIn }) {
       features: [
         "1,000 High-priority credits",
         "Unlimited conversation memory",
-        "DeepSeek & Gemini Flash models",
+        "High-capacity reasoning & heavy task models",
         "Vector-indexed PDF RAG analyzer",
         "Priority queue & highest limits",
         "Instant support"
@@ -520,7 +520,7 @@ export default function LandingPage({ onLogin, isLoggingIn }) {
                         </span>
                       </div>
                       <div className="text-xs text-slate-400 mt-0.5">
-                        Operational capacities, model backends, and credit usage per agent.
+                        Operational capacities, engineering workloads, and credit usage per agent.
                       </div>
                     </div>
                     <button
@@ -612,7 +612,7 @@ export default function LandingPage({ onLogin, isLoggingIn }) {
                         </span>
                       </div>
                       <div className="text-xs text-slate-400 mt-0.5">
-                        How requests flow through the Supervisor DAG into the isolated live sandbox.
+                        How requests flow through the autonomous multi-agent pipeline into the live sandbox.
                       </div>
                     </div>
                     <button
@@ -811,7 +811,7 @@ export default function LandingPage({ onLogin, isLoggingIn }) {
                         </span>
                       </div>
                       <div className="text-xs text-slate-400 mt-0.5">
-                        Architecture, sandbox sandboxing, vector embeddings, and binary compilation.
+                        Architecture, multi-agent workflows, vector embeddings, and export compilation.
                       </div>
                     </div>
                     <button
@@ -1160,17 +1160,17 @@ export default function LandingPage({ onLogin, isLoggingIn }) {
                     {/* User message */}
                     <div className="flex justify-end">
                       <div className="max-w-[85%] bg-gradient-to-br from-indigo-500 to-violet-700 text-white text-[11px] sm:text-xs px-3 py-2 sm:px-3.5 sm:py-2.5 rounded-2xl rounded-tr-sm shadow-md leading-relaxed">
-                        Build an interactive responsive dashboard with dark theme and statistics cards.
+                        Build a full-stack dashboard with backend API services, database schema, and live analytics.
                       </div>
                     </div>
                     {/* Assistant message */}
                     <div className="flex justify-start">
                       <div className="max-w-[95%] bg-white/[0.04] border border-white/[0.06] text-slate-200 text-[11px] sm:text-xs p-3 sm:p-3.5 rounded-2xl rounded-tl-sm space-y-1.5 sm:space-y-2">
                         <div className="text-indigo-400 font-semibold text-[10px] sm:text-[11px]">
-                          Grid Coding Agent • Generating Single Page App
+                          Grid Coding Agent • Full-Stack App & Backend Architecture
                         </div>
                         <p className="text-slate-300 text-[11px] sm:text-[11.5px] leading-relaxed">
-                          Generated <code className="text-indigo-300">index.html</code>, <code className="text-indigo-300">style.css</code>, and <code className="text-indigo-300">script.js</code>. The interactive dashboard is ready in your Sandbox panel.
+                          Generated complete full-stack web application modules, backend API routes, and interactive components. Live sandbox preview is running.
                         </p>
                       </div>
                     </div>
@@ -1198,7 +1198,7 @@ export default function LandingPage({ onLogin, isLoggingIn }) {
                     </span>
                   </div>
                   <div className="flex-1 mt-3 rounded-lg border border-white/[0.06] bg-[#14161f] p-3 text-[11px] font-mono text-slate-300 space-y-2">
-                    <div className="text-slate-500">// index.html (Live Render)</div>
+                    <div className="text-slate-500">// App & Backend Logic (Live Preview)</div>
                     <div className="p-2.5 rounded bg-white/[0.04] border border-white/[0.06]">
                       <div className="text-[10px] font-sans font-bold text-slate-200">Revenue Analytics</div>
                       <div className="text-[14px] font-bold text-indigo-400 mt-1">₹ 2,48,500 <span className="text-[10px] text-emerald-400">+28%</span></div>
@@ -1271,7 +1271,7 @@ export default function LandingPage({ onLogin, isLoggingIn }) {
               </div>
               <h4 className="text-base sm:text-lg font-bold text-white mb-1 sm:mb-2">Intent Detection</h4>
               <p className="text-xs sm:text-sm text-slate-400 leading-relaxed">
-                The Supervisor Graph detects whether your prompt requires full-stack code, live search results, presentation slides, PDF document compilation, or image inspection.
+                The Autonomous Orchestrator detects whether your prompt requires full-stack web development, backend engineering, debugging, live search, presentation slides, or PDF synthesis.
               </p>
             </div>
 
@@ -1281,7 +1281,7 @@ export default function LandingPage({ onLogin, isLoggingIn }) {
               </div>
               <h4 className="text-base sm:text-lg font-bold text-white mb-1 sm:mb-2">Autonomous Execution</h4>
               <p className="text-xs sm:text-sm text-slate-400 leading-relaxed">
-                The assigned agent invokes specialized toolchains: Tavily search, LangChain memory buffers, PDFKit doc builders, PptxGenJS presentation creators, or DeepSeek coders.
+                The assigned specialist agent executes targeted workflows: full-stack code synthesis, deep debugging, vector document retrieval, slide deck compilers, or live web research.
               </p>
             </div>
 
